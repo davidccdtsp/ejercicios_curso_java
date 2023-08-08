@@ -6,8 +6,8 @@ public class EjercicioArrays {
 
   public static void ejercicio01() {
 
-    System.out.println("Tema 3: Arrays");
-    System.out.println("Ejercicio 1");
+    System.out.println("\n\nTema 3: Arrays");
+    System.out.println("\nEjercicio 1");
 
     // Crear el array numeros {1789, 2035, 1899, 1456, 2013, 1458, 2458, 1254, 1472, 2365}.
 
@@ -23,7 +23,7 @@ public class EjercicioArrays {
 
   public static void ejercicio02() {
 
-    System.out.println("Ejercicio 2");
+    System.out.println("\nEjercicio 2");
 
     // Crear el array 3x3 matriz
     // [1, 2, 3]
@@ -39,7 +39,7 @@ public class EjercicioArrays {
 
   public static void ejercicio03() {
 
-    System.out.println("Ejercicio 3");
+    System.out.println("\nEjercicio 3");
 
     // Declarar e inicializar los arrays para que su salida al mostrarlos por consola sea la
     // indicada
@@ -57,7 +57,7 @@ public class EjercicioArrays {
   }
 
   public static void ejercicio04() {
-    System.out.println("Ejercicio 4");
+    System.out.println("\nEjercicio 4");
 
     // Ordenar alfabéticamente y muestrael array palabras reado en el ejercicio 1.b y
     // Ordenarlo alfabéticamente
@@ -67,7 +67,7 @@ public class EjercicioArrays {
   }
 
   public static void ejercicio05() {
-    System.out.println("Ejercicio 5");
+    System.out.println("\nEjercicio 5");
 
     // Usando el array numeros del ejercicio 1
     // Cambiar todos sus valores a 0
@@ -77,7 +77,7 @@ public class EjercicioArrays {
   }
 
   public static void ejercicio06() {
-    System.out.println("Ejercicio 6");
+    System.out.println("\nEjercicio 6");
 
     // Copia el valor del array numeros dentro de un nuevo array llamado copia.
 
