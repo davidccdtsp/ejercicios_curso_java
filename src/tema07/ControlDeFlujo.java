@@ -18,7 +18,7 @@ public class ControlDeFlujo {
   }
 
   /*
-   * Modificar el codigo para que muestre el mensaje especifico en caso de que a y b sean iguales
+   * Modificar el codigo para que muestre un mensaje en caso de que a y b sean iguales
    */
 
   public static void ejercicio02() {
@@ -44,7 +44,7 @@ public class ControlDeFlujo {
   }
 
   /*
-   * Escribir un programa que cuente de 1 a 100 usando WHILE
+   * Usando WHILE Escribir un programa que cuente de 1 a 100
    */
   public static void ejercicio04() {
     System.out.println("\nEjercicio 4");
@@ -76,7 +76,7 @@ public class ControlDeFlujo {
   }
 
   /*
-   * Usando el bucle For, mostrar por pantalla el contenido del array planetas
+   * Usando For mostrar por pantalla el contenido del array planetas
    */
   public static void ejericico07() {
     System.out.println("\nEjercicio 7");
@@ -86,7 +86,7 @@ public class ControlDeFlujo {
   }
 
   /*
-   * Complear el siguiente codigo
+   * Completar el siguiente codigo
    */
   public static void ejercicio08() {
     System.out.println("\nEjercicio 8");
@@ -96,13 +96,14 @@ public class ControlDeFlujo {
 
     // Descomentar el siguiente codigo
     // for(String : ){
-    // System.out.print(+" ");
+    //   System.out.print();
     // }
 
   }
 
   /*
-   * El programa en base al numero del dia de la semana y devolver el nombre del dia correspondiente
+   * En base al número del día de la semana (0, 1, …, 6 ) devolver el nombre del día correspondiente, 
+   * en caso de que el valor sea negativo o superior a 6 devolver un mensaje indicando el rango correcto.
    */
   public static void ejercicio09() {
     System.out.println("\nEjercicio 9");
@@ -137,7 +138,7 @@ public class ControlDeFlujo {
 
 
   /*
-   * Modificar el siguiente codigo usando break
+   * Modificar el siguiente código usando break de modo que sea equivalente
    */
   public static void ejercicio11() {
     System.out.println("\nEjercicio 11");
@@ -187,15 +188,15 @@ public class ControlDeFlujo {
    * 
    */
   public static void ejercicio14() {
-    // System.out.println("\nEjercicio 14");
+    System.out.println("\nEjercicio 14");
 
     // double nota = 9.5;
 
     // String resultado = switch (nota) {
     //   case 9.0, 10.0 -> {
-    //     yield "sobresaliente";
+    //     return "sobresaliente";
     //   }
-    //   case 7.0, 8.0 -> "Notable";
+    //   case 7.0, 8.0 -> {"Notable"};
     //   default -> "";
     // };
 
