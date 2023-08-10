@@ -1,6 +1,7 @@
 import tema03.EjercicioArrays;
 import tema04.Operadores;
 import tema07.ControlDeFlujo;
+import tema09.Herencia;
 import tema11.ClasesAnidadas;
 
 public class App {
@@ -31,6 +32,14 @@ public class App {
         ControlDeFlujo.ejercicio13();
         ControlDeFlujo.ejercicio14();
 
+        Herencia.ejercicio01();
+        Herencia.ejercicio02();
+        Herencia.ejercicio03();
+        Herencia.ejercicio04();
+        Herencia.ejercicio05();
+        Herencia.ejercicio06();
+        Herencia.ejercicio07();
+        Herencia.ejercicio08();
 
     }
 }
