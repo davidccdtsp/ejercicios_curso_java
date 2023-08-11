@@ -15,7 +15,7 @@ public class Herencia {
 
 
   /**
-   * Todos los animales duermen impleentar los cambios el metodo mostrara un mensaje por terminal
+   * Todos los animales duermen, implementar los cambios. El metodo mostrara un mensaje por terminal
    * indicando que el Animal X duerme
    */
   public static void ejercicio02() {
@@ -36,7 +36,7 @@ public class Herencia {
 
   /**
    * Si un animal se queda sin energia se morira, aplicar los cambios para que se muestre un mensaje
-   * por pantalla
+   * por pantalla si el animal muere
    */
   public static void ejercicio04() {
     System.out.println("\nEjercicio 4");

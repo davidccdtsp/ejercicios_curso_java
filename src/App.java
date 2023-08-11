@@ -2,6 +2,7 @@ import tema03.EjercicioArrays;
 import tema04.Operadores;
 import tema07.ControlDeFlujo;
 import tema09.Herencia;
+import tema10.Interfaces;
 import tema11.ClasesAnidadas;
 
 public class App {
@@ -40,6 +41,10 @@ public class App {
         Herencia.ejercicio06();
         Herencia.ejercicio07();
         Herencia.ejercicio08();
+
+        Interfaces.ejercicio01();
+        Interfaces.ejercicio02();
+        Interfaces.ejercicio03();
 
     }
 }

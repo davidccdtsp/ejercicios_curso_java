@@ -29,6 +29,5 @@ public class Animal {
     Random random = new Random(); // Genera un booleano al hazar
     return random.nextBoolean();
   }
-
   
 }
