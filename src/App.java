@@ -5,6 +5,7 @@ import tema08.ClasesyObjetos;
 import tema09.Herencia;
 import tema10.Interfaces;
 import tema11.ClasesAnidadas;
+import tema13.Lambdas;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -50,6 +51,23 @@ public class App {
         Interfaces.ejercicio01();
         Interfaces.ejercicio02();
         Interfaces.ejercicio03();
+
+        Lambdas.ejercicio01();
+        Lambdas.ejercicio02();
+        Lambdas.ejercicio03();
+        Lambdas.ejercicio04();
+        Lambdas.ejercicio05();
+        Lambdas.ejercicio06();
+        Lambdas.ejercicio07();
+        Lambdas.ejercicio08();
+        Lambdas.ejercicio09();
+        Lambdas.ejercicio10();
+        Lambdas.ejercicio11();
+        Lambdas.ejercicio12();
+        Lambdas.ejercicio13();
+        Lambdas.ejercicio14();
+        Lambdas.ejercicio15();
+        Lambdas.ejercicio16();
 
     }
 }

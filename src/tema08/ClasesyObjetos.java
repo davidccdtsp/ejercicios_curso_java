@@ -70,10 +70,10 @@ public class ClasesyObjetos {
   /**
    * Crear la clase Carguero la cual extiende a NaveEspacial
    * 
-   * Esta clase tendra las siguientes consntantes: ERNERGIA_MAX (energia maxima) = 1000000 MASA
+   * Esta clase tendra las siguientes constantes: ERNERGIA_MAX (energia maxima) = 1000000 MASA
    * (masa sin carga) = 500000 CARGA_MAX (carga maxima) = 750000
    * 
-   * Modificar los metodos necesarios teniendo en cuenta las cosntantes
+   * Modificar los metodos necesarios teniendo en cuenta las constantes
    * 
    * void cargar(cantidad) void descargar(cantidad) int getCarga() int getMasaTotal() (masa nave +
    * masa carga)
