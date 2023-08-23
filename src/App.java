@@ -6,7 +6,7 @@ import tema08.ClasesyObjetos;
 import tema09.Herencia;
 import tema10.Interfaces;
 import tema11.ClasesAnidadas;
-import tema13.Lambdas;
+import tema14.Lambdas;
 
 public class App {
     public static void main(String[] args) throws Exception {

@@ -1,4 +1,4 @@
-package tema13;
+package tema14;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -26,7 +26,7 @@ public class Lambdas {
    */
 
   public static void ejercicio01() {
-    System.out.println("\n\nTema 13");
+    System.out.println("\n\nTema 14");
     System.out.println("\nEjercicio 1");
 
     Runnable lambda1 = () -> System.out.println("Lambda 1");
