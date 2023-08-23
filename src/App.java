@@ -1,3 +1,4 @@
+import tema02.Variables;
 import tema03.EjercicioArrays;
 import tema04.Operadores;
 import tema07.ControlDeFlujo;
@@ -10,6 +11,15 @@ import tema13.Lambdas;
 public class App {
     public static void main(String[] args) throws Exception {
 
+        Variables.ejercicio01();
+        Variables.ejercicio02();
+        Variables.ejercicio03();
+        Variables.ejercicio04();
+        Variables.ejercicio05();
+        Variables.ejercicio06();
+        Variables.ejercicio07();
+        Variables.ejercicio08();
+        
         EjercicioArrays.ejercicio01();
         EjercicioArrays.ejercicio02();
         EjercicioArrays.ejercicio03();
