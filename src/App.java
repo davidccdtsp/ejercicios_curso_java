@@ -20,7 +20,7 @@ public class App {
         Variables.ejercicio06();
         Variables.ejercicio07();
         Variables.ejercicio08();
-        
+
         EjercicioArrays.ejercicio01();
         EjercicioArrays.ejercicio02();
         EjercicioArrays.ejercicio03();
@@ -63,8 +63,20 @@ public class App {
         Interfaces.ejercicio02();
         Interfaces.ejercicio03();
 
+        // Tema 11
+        ClasesAnidadas.ejercicio01();
+        ClasesAnidadas.ejercicio02();
+        ClasesAnidadas.ejercicio03();
+        ClasesAnidadas.ejercicio04();
+        ClasesAnidadas.ejercicio05();
+        ClasesAnidadas.ejercicio06();
+
+        // Tema 12
         PaquetesYModulos.ejercicio01();
 
+        // Tema 13
+
+        // Tema 14
         Lambdas.ejercicio01();
         Lambdas.ejercicio02();
         Lambdas.ejercicio03();
@@ -81,6 +93,7 @@ public class App {
         Lambdas.ejercicio14();
         Lambdas.ejercicio15();
         Lambdas.ejercicio16();
+
 
     }
 }
