@@ -6,6 +6,7 @@ import tema08.ClasesyObjetos;
 import tema09.Herencia;
 import tema10.Interfaces;
 import tema11.ClasesAnidadas;
+import tema12.PaquetesYModulos;
 import tema14.Lambdas;
 
 public class App {
@@ -61,6 +62,8 @@ public class App {
         Interfaces.ejercicio01();
         Interfaces.ejercicio02();
         Interfaces.ejercicio03();
+
+        PaquetesYModulos.ejercicio01();
 
         Lambdas.ejercicio01();
         Lambdas.ejercicio02();
