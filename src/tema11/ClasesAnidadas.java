@@ -28,7 +28,7 @@ public class ClasesAnidadas {
   }
 
   /*
-   * Añadir le metodo void setValor(int nuevoValor)
+   * Añadir el metodo void setValor(int nuevoValor)
    */
   public static void ejercicio03() {
     System.out.println("\nEjercicio 3");
@@ -55,8 +55,8 @@ public class ClasesAnidadas {
   public static void ejercicio05() {
     System.out.println("\nEjericio 5");
 
-    // Solucion solucion = new Solucion();
-    // solucion.foo();
+    Solucion solucion = new Solucion();
+    solucion.foo();
 
   }
 
