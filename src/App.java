@@ -1,3 +1,4 @@
+import java.beans.JavaBean;
 import tema02.Variables;
 import tema03.EjercicioArrays;
 import tema04.Operadores;
@@ -10,6 +11,7 @@ import tema12.PaquetesYModulos;
 import tema13.Genericos;
 import tema14.Lambdas;
 import tema15.Excepciones;
+import tema16.JavaIO;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -110,6 +112,11 @@ public class App {
         Excepciones.ejericico03();
         Excepciones.ejercicio04();
         Excepciones.ejercicio05();
+
+        // Tema 16 - Java IO
+        JavaIO.ejercicio01();
+        JavaIO.ejercicio02();
+        JavaIO.ejercicio03();
 
     }
 }
