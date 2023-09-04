@@ -30,7 +30,7 @@ public class JavaIO {
     // try {
     //   Files.writeString(path, "Texto de ejemplo", StandardCharsets.UTF_8);
     // } catch (IOException e) {
-    //   // TODO Auto-generated catch block
+    //   // TODO Auto-generated catch bgit slock
     //   e.printStackTrace();
     // }
 
@@ -42,6 +42,7 @@ public class JavaIO {
 
   public static void ejercicio03(){
     System.out.println("Ejercicio 3");
+
   }
   
 }

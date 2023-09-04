@@ -16,6 +16,7 @@ import tema16.JavaIO;
 public class App {
     public static void main(String[] args) throws Exception {
 
+        // Tema 2
         Variables.ejercicio01();
         Variables.ejercicio02();
         Variables.ejercicio03();
@@ -25,17 +26,20 @@ public class App {
         Variables.ejercicio07();
         Variables.ejercicio08();
 
+        // Tema 3
         EjercicioArrays.ejercicio01();
         EjercicioArrays.ejercicio02();
         EjercicioArrays.ejercicio03();
         EjercicioArrays.ejercicio04();
         EjercicioArrays.ejercicio05();
 
+        // Tema 4
         Operadores.ejercicio01();
         Operadores.ejercicio02();
         Operadores.ejercicio03();
         Operadores.ejercicio04();
 
+        // Tema 7
         ControlDeFlujo.ejercicio01();
         ControlDeFlujo.ejercicio02();
         ControlDeFlujo.ejercicio03(24, 43, 1);
