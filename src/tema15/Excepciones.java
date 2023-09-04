@@ -6,6 +6,8 @@ public class Excepciones {
    * Completar el siguiente codigo con try catch
    */
   public static void ejercicio01() {
+    System.out.println("\n\nTema 15: Excepciones");
+    System.out.println("\nEjercicio 1");
 
     // Class.forName("FindMissingClass");
 
@@ -15,6 +17,7 @@ public class Excepciones {
    * Crear una excepción propia que extienda de Error y probarla
    */
   public static void ejercicio02() {
+    System.out.println("\nEjercicio 2");
 
   }
 
@@ -22,6 +25,7 @@ public class Excepciones {
    * Corregir el siguiente codigo
    */
   public static void ejericico03() {
+    System.out.println("\nEjercicio 3");
 
     int a = 0;
 
@@ -37,6 +41,7 @@ public class Excepciones {
    * Modificar el siguiente codigo para que maneje las ArithmeticException de un modo especfico
    */
   public static void ejercicio04() {
+    System.out.println("\nEjercicio 4");
 
     int[] array = {1, 2, 3};
 
@@ -55,6 +60,7 @@ public class Excepciones {
    * Que problema tiene el siguiente codigo
    */
   public static void ejercicio05() {
+    System.out.println("\nEjercicio 5");
 
     // try {
     //   throw new AssertionError();

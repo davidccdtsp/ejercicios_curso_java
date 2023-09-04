@@ -161,4 +161,57 @@ public class ClasesyObjetos {
 
   };
 
+   /*
+   * Completar el metodo getTalla para que devuelva un entero correspondiente
+   * a la talla
+   */
+  public static void ejercicio06() {
+    System.out.println("\nEjercicio 6");
+
+    enum Talla{
+      S, M, L, XL;
+
+      int getTalla(){
+
+        // switch(this) {
+        //   case S: return 30;
+        //   case M: return 32;
+        //   case L: return 36;
+        //   case XL: return 40;
+        //   default: return 0;
+        // }
+
+        return 0;
+      }
+    }
+
+    System.out.println("La talla M es: "+Talla.M.getTalla());
+  }
+  
+  /*
+   * Crear un record para Cliente con los siguientes atributos:
+   *  - Nombre
+   *  - email
+   *  - saldo
+   */
+  public static void ejercicio07(){
+    System.out.println("\nEjercicio 7");
+
+    record Cliente(int a){};
+
+    Cliente nuevo = new Cliente(2);
+
+    System.out.println("Creado el cliente "+nuevo);
+
+  }
+
+  /*
+   * Sobre la clase cliente creada, anadir un constructor
+   * no canonico que acepte nombre, email dejando el saldo a 0.
+   */
+  public static void ejercicio08(){
+    System.out.println("\nEjericio 8");
+
+  }
+
 }

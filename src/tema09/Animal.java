@@ -25,7 +25,7 @@ public class Animal {
     return energia -= calorias;
   }
 
-  public static boolean compatibles(Animal animal1, Animal anial2){
+  public static boolean compatibles(Animal animal1, Animal animal2){
     Random random = new Random(); // Genera un booleano al hazar
     return random.nextBoolean();
   }

@@ -7,6 +7,7 @@ import tema09.Herencia;
 import tema10.Interfaces;
 import tema11.ClasesAnidadas;
 import tema12.PaquetesYModulos;
+import tema13.Genericos;
 import tema14.Lambdas;
 import tema15.Excepciones;
 
@@ -47,9 +48,15 @@ public class App {
         ControlDeFlujo.ejercicio13();
         ControlDeFlujo.ejercicio14();
 
+        // Tema 8
         ClasesyObjetos.ejercicio01();
         ClasesyObjetos.ejercicio02();
         ClasesyObjetos.ejercicio03();
+        ClasesyObjetos.ejercicio04();
+        ClasesyObjetos.ejercicio05();
+        ClasesyObjetos.ejercicio06();
+        ClasesyObjetos.ejercicio07();
+        ClasesyObjetos.ejercicio08();
 
         Herencia.ejercicio01();
         Herencia.ejercicio02();
@@ -76,6 +83,8 @@ public class App {
         PaquetesYModulos.ejercicio01();
 
         // Tema 13
+        Genericos.ejercicio01();
+        Genericos.ejercicio02();
 
         // Tema 14 - Expresiones lambda
         Lambdas.ejercicio01();

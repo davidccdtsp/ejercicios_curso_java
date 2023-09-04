@@ -10,7 +10,6 @@ public class ClasesAnidadas {
     System.out.println("\n\nEjercicios Tema 11: Clases anidadas");
     System.out.println("\nEjercicio 1");
 
-
     // System.out.println("Creada clase interna "+sol.getClass());
 
   }
