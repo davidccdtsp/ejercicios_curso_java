@@ -8,6 +8,7 @@ import tema10.Interfaces;
 import tema11.ClasesAnidadas;
 import tema12.PaquetesYModulos;
 import tema14.Lambdas;
+import tema15.Excepciones;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -76,7 +77,7 @@ public class App {
 
         // Tema 13
 
-        // Tema 14
+        // Tema 14 - Expresiones lambda
         Lambdas.ejercicio01();
         Lambdas.ejercicio02();
         Lambdas.ejercicio03();
@@ -94,6 +95,12 @@ public class App {
         Lambdas.ejercicio15();
         Lambdas.ejercicio16();
 
+        // Tema 15 - Excepciones
+        Excepciones.ejercicio01();
+        Excepciones.ejercicio02();
+        Excepciones.ejericico03();
+        Excepciones.ejercicio04();
+        Excepciones.ejercicio05();
 
     }
 }
