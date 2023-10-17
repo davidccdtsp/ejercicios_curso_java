@@ -12,6 +12,7 @@ import tema13.Genericos;
 import tema14.Lambdas;
 import tema15.Excepciones;
 import tema16.JavaIO;
+import tema17.Anotaciones;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -121,6 +122,9 @@ public class App {
         JavaIO.ejercicio01();
         JavaIO.ejercicio02();
         JavaIO.ejercicio03();
+
+        Anotaciones.ejercicio01();
+        Anotaciones.ejercicio02();
 
     }
 }
