@@ -58,6 +58,9 @@ public class EjercicioArrays {
 
   public static void ejercicio04() {
     System.out.println("\nEjercicio 4");
+    
+    // Array palabras {"Apple", "Google", "Microsoft", "Nvidia", "Intel", "AMD", "TSMC",
+    // "Samsung", "Qualcom", "Huawei", "ASML"};
 
     // Ordenar alfabéticamente y muestrael array palabras reado en el ejercicio 1.b y
     // Ordenarlo alfabéticamente

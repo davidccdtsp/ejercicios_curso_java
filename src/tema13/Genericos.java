@@ -3,6 +3,28 @@ package tema13;
 import java.util.ArrayList;
 import java.util.List;
 
+final class Solucion1 {
+    // Tomar este metodo como base
+    static boolean iguales(int[] arrA, int[] arrB) {
+      for (int i = 0; i < arrA.length; i++) {
+        if (arrA[i] != arrB[i])
+          return false;
+      }
+      return true;
+    }
+  }
+
+final class Solucion2 {
+    public static List<Object> invierte(List<Object> lista) {
+      List<Object> nueva = new ArrayList<Object>();
+
+      for(int i = lista.size()-1; i>=0; i--){
+        nueva.add(lista.get(i));
+      }
+      return nueva;
+    }
+  }
+
 public class Genericos {
 
   /*
@@ -20,17 +42,6 @@ public class Genericos {
     String arrayE[] = {"teclado", "raton", "monitor"};
     String arrayF[] = {"teclado", "webcam", "monitor"};
 
-    final class Solucion1 {
-      // Tomar este metodo como base
-      static boolean iguales(int[] arrA, int[] arrB) {
-        for (int i = 0; i < arrA.length; i++) {
-          if (arrA[i] != arrB[i])
-            return false;
-        }
-        return true;
-      }
-    }
-
     boolean resultado = Solucion1.iguales(arrayA, arrayB);
     System.out.println("ArrayA y arrayB son iguales: " + resultado);
   }
@@ -43,17 +54,6 @@ public class Genericos {
 
     List<Object> palabras = List.of("playa", "arbol", "oceano", "montaña");
     // List<String> palabras = List.of("playa", "arbol", "oceano", "montaña");
-
-    final class Solucion2 {
-      public static List<Object> invierte(List<Object> lista) {
-        List<Object> nueva = new ArrayList<Object>();
-
-        for(int i = lista.size()-1; i>=0; i--){
-          nueva.add(lista.get(i));
-        }
-        return nueva;
-      }
-    }
 
     System.out.println("Lista en orden original:");
     System.out.println(palabras);

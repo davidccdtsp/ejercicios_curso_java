@@ -62,14 +62,17 @@ public class ClasesAnidadas {
   /*
    * Crear la clase anonima sobre la interfaz Cosa
    */
-  public static void ejercicio06(){
-    System.out.println("\nEjericio 6");
-
-    interface Cosa {
+  
+  interface Cosa {
       public default void diAlgo(){
         System.out.println("Algo");
       };
     }
+  
+  public static void ejercicio06(){
+    System.out.println("\nEjericio 6");
+
+    
   }
 
 

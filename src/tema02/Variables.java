@@ -11,21 +11,21 @@ public class Variables {
     System.out.println("\n\nTeam 2: Variables");
     System.out.println("\nEjercicio 1");
 
-    // boolean logico = ;
-    // int = 123;
-    // CONSTANTE = 2.718;
-    // float decimal = ;
-    // double = decimal;
-    // hexadecimal = 0xFF_EC_DE_5E;
-    // letra = 'Z';
-    // byte a = ;
-    // long numero = ;
-    // valorA = 123.23F;
-    // valorB = 0.005f;
-    // respuesta = true;
-    // valorC = 45.32e4;
-    // valorD = 3123.00D;
-    // menorQue = '\u003c';
+//     boolean logico = ;
+//     int = 123;
+//     CONSTANTE = 2.718;
+//     float decimal = ;
+//     double = decimal;
+//     hexadecimal = 0xFF_EC_DE_5E;
+//     letra = 'Z';
+//     byte a = ;
+//     long numero = ;
+//     valorA = 123.23F;
+//     valorB = 0.005f;
+//     respuesta = true;
+//     valorC = 45.32e4;
+//     valorD = 3123.00D;
+//     menorQue = '\u003c';
   }
 
   /*

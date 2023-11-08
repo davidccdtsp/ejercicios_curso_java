@@ -63,7 +63,6 @@ public class App {
         ClasesyObjetos.ejercicio05();
         ClasesyObjetos.ejercicio06();
         ClasesyObjetos.ejercicio07();
-        ClasesyObjetos.ejercicio08();
 
         Herencia.ejercicio01();
         Herencia.ejercicio02();

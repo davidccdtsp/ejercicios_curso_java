@@ -42,18 +42,9 @@ public class Lambdas {
    * Crear una expresionLambda que funcione como una factoria que genere como maximo 10 instancias
    * de la clase Demo
    */
-  public static void ejercicio02() {
+  public static void ejercicio02(){
     System.out.println("\nEjercicio 2");
 
-    class Demo {
-      static int contador = 10;
-      int valor;
-
-      Demo(int valor) {
-        this.valor = valor;
-        Demo.contador--;
-      }
-    }
     // Supplier<Demo> factoriaDemo =
   }
 

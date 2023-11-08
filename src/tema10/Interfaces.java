@@ -15,10 +15,8 @@ public class Interfaces {
   /**
    * Implementar la siguiente interfaz
    */
-  public static void ejercicio02() {
-    System.out.println("\nEjercicio 2");
-
-    interface Poligono {
+  
+  interface Poligono {
 
       int MIN_LADOS = 3;
 
@@ -26,7 +24,12 @@ public class Interfaces {
 
       int numeroDeLados();
 
-    };
+   };
+  
+  public static void ejercicio02() {
+    System.out.println("\nEjercicio 2");
+
+
 
     // Descomentar el siguiente codigo
     // class Cuadrado implements Poligono {
