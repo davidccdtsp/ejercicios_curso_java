@@ -1,6 +1,7 @@
 package tema13;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 final class Solucion1 {
@@ -52,7 +53,7 @@ public class Genericos {
   public static void ejercicio02() {
     System.out.println("\nEjercicio 2");
 
-    List<Object> palabras = List.of("playa", "arbol", "oceano", "montaña");
+    List<Object> palabras = Arrays.asList("playa", "arbol", "oceano", "montaña");
     // List<String> palabras = List.of("playa", "arbol", "oceano", "montaña");
 
     System.out.println("Lista en orden original:");
