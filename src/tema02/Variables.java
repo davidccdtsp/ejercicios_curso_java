@@ -11,21 +11,21 @@ public class Variables {
     System.out.println("\n\nTema 2: Variables");
     System.out.println("\nEjercicio 1");
 
-//     boolean logico = ;
-//     int = 123;
-//     CONSTANTE = 2.718;
-//     float decimal = ;
-//     double = decimal;
-//     hexadecimal = 0xFF_EC_DE_5E;
-//     letra = 'Z';
-//     byte a = ;
-//     long numero = ;
-//     valorA = 123.23F;
-//     valorB = 0.005f;
-//     respuesta = true;
-//     valorC = 45.32e4;
-//     valorD = 3123.00D;
-//     menorQue = '\u003c';
+     boolean logico = true;
+     int entero = 123;
+     final double CONSTANTE = 2.718;
+     float decimal =  1.23f;
+     double doble = decimal;
+     int hexadecimal = 0xFF_EC_DE_5E;
+     char letra = 'Z';
+     byte a = 12;
+     long numero = 999L;
+     float valorA = 123.23F;
+     float valorB = 0.005f;
+     boolean respuesta = true;
+     double valorC = 45.32e4;
+     double valorD = 3123.00D;
+     char menorQue = '\u003c';
   }
 
   /*
@@ -35,16 +35,16 @@ public class Variables {
     System.out.println("\nEjerccicio 2");
 
     final char letra = 'a';
-    // short valor = 123L;
-    // byte b = 200;
-    // long variable = 111_111_L;
-    // char otraLetra = -123;
-    // float numero = 32.54e2;
-    // int entero = 290_;
-    // float numerB = 43d;
-    // byte binario = 0b11011101;
-    // float decimal = 13_.14;
-    // char letraD = "D";
+     short valor = 123;
+     byte b = 22;
+     long variable = 111_111L;
+     char otraLetra = 123;
+     float numero = 32.54f;
+     int entero = 290;
+     float numerB = 43f;
+     byte binario = 0b0101_1101;
+     float decimal = 13.14f;
+     char letraD = 'D';
   }
 
 
@@ -58,7 +58,15 @@ public class Variables {
     System.out.println("\nEjerccicio 3");
 
     char[] letras = {'J', 'a', 'v', 'a'};
-
+    
+    String palabra1 = "TypeScript";
+    String palabra2 = new String(letras);
+    String palabra3 = new String("Go");
+    
+    System.out.println();
+    System.out.println(palabra1);
+    System.out.println(palabra2);
+    System.out.println(palabra3);
   }
 
 
@@ -72,7 +80,7 @@ public class Variables {
     Random rand = new Random();
     int aleatorio = rand.nextInt(10);
 
-    String texto = "Numero aleatorio: NUMERO AQUI generado con nextInt()";
+    String texto = "Numero aleatorio: "+aleatorio+" generado con nextInt()";
   }
 
 
@@ -86,11 +94,11 @@ public class Variables {
     final float LUZ_TIERRA_LUNA = 1.255f;
     String texto;
 
-    // texto = String.format("Se estima que la edad del universo es EDAD_UNIVERSO millones de años, "+
-    //                     "la luz tarda LUZ_TIERRA_LUNA segundos en viajar desde la Tierra hasta la Luna"
-    //                     ,);
+    texto = String.format("Se estima que la edad del universo es %d millones de años, "+
+                         "la luz tarda %.2f segundos en viajar desde la Tierra hasta la Luna"
+                         ,EDAD_UNIVERSO, LUZ_TIERRA_LUNA );
 
-    // System.out.println(texto);
+    System.out.println(texto);
 
   }
 
@@ -101,17 +109,17 @@ public class Variables {
   public static void ejercicio06(){
     System.out.println("\nEjerccicio 6");
 
-    final String sringEntero = "45";
+    final String stringEntero = "45";
     final String stringDecimal = "6.029";
     final int numero = 1969;
 
-    int entero = 0;
-    float decimal = 0;
+    int entero = Integer.valueOf(stringEntero);
+    float decimal = Float.valueOf(stringDecimal);
     String stringNumero = "";
 
     System.out.println("String \"45\" transformado a entero = "+entero);
-    System.out.println("String \"6.029\" transformado a float = "+entero);
-    System.out.println("El Apollo XI fue lanzado el 16 de Julio de "+stringNumero+" desde Cape Kennedy");
+    System.out.println("String \"6.029\" transformado a float = "+decimal);
+    System.out.println("El Apollo XI fue lanzado el 16 de Julio de "+numero+" desde Cape Kennedy");
 
   }
 
@@ -127,15 +135,15 @@ public class Variables {
     System.out.println("\nEjerccicio 7");
 
     String texto = "Java es un lenguaje de tipado estatico.";
-    char caracter;
-    String subcadena;
-    String substitucion;
-    boolean contieneTipado;
+    char caracter = texto.charAt(5);
+    String subcadena = texto.substring(5,20);
+    String substitucion = texto.replaceAll("Java", "C++");
+    boolean contieneTipado = texto.contains(texto);
 
-    // System.out.println("El caracter en la posicion 5 es: "+caracter );
-    // System.out.println(subcadena);
-    // System.out.println(substitucion);
-    // System.out.println("String Texto contiene tipado: "+contieneTipado);
+     System.out.println("El caracter en la posicion 5 es: "+caracter );
+     System.out.println(subcadena);
+     System.out.println(substitucion);
+     System.out.println("String Texto contiene tipado: "+contieneTipado);
 
   }
 
@@ -151,13 +159,15 @@ public class Variables {
     String sufijo = "forma parte de la Commonwealth y cuenta con una polacion de habitantes";
     int poblacion = 92436;
 
-    // StringBuilder sb = ;
+     StringBuilder sb = new StringBuilder(texto);
     
-    // System.out.println(sb);
+     System.out.println(sb);
     // Codigo para concatenar sufijo
-    // System.out.println(sb);
+     sb.append(sufijo);
+    System.out.println(sb);
     // Codigo para insertar poblacion
-    // System.out.println(sb);
+    sb.insert(77, poblacion);
+    System.out.println(sb);
     
 
 
