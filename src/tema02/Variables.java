@@ -8,7 +8,7 @@ public class Variables {
    * Completar el siguiente codigo
    */
   public static void ejercicio01() {
-    System.out.println("\n\nTeam 2: Variables");
+    System.out.println("\n\nTema 2: Variables");
     System.out.println("\nEjercicio 1");
 
 //     boolean logico = ;
