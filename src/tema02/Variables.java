@@ -34,14 +34,14 @@ public class Variables {
   public static void ejercicio02() {
     System.out.println("\nEjerccicio 2");
 
-    final char letra = 'a';
-     short valor = 123;
+    final char LETRA = 'a';
+    short valor = 123;
      byte b = 22;
      long variable = 111_111L;
      char otraLetra = 123;
      float numero = 32.54f;
      int entero = 290;
-     float numerB = 43f;
+     float numeroB = 43f;
      byte binario = 0b0101_1101;
      float decimal = 13.14f;
      char letraD = 'D';
@@ -116,6 +116,8 @@ public class Variables {
     int entero = Integer.valueOf(stringEntero);
     float decimal = Float.valueOf(stringDecimal);
     String stringNumero = Integer.toString(numero);
+    stringNumero = ""+numero+"";
+    stringNumero = String.valueOf(numero);
 
     System.out.println("String \"45\" transformado a entero = "+entero);
     System.out.println("String \"6.029\" transformado a float = "+decimal);
@@ -138,7 +140,7 @@ public class Variables {
     char caracter = texto.charAt(5);
     String subcadena = texto.substring(5,20);
     String substitucion = texto.replaceAll("Java", "C++");
-    boolean contieneTipado = texto.contains(texto);
+    boolean contieneTipado = texto.contains("tipado");
 
      System.out.println("El caracter en la posicion 5 es: "+caracter );
      System.out.println(subcadena);
@@ -161,7 +163,7 @@ public class Variables {
 
      StringBuilder sb = new StringBuilder(texto);
     
-     System.out.println(sb);
+    System.out.println(sb);
     // Codigo para concatenar sufijo
      sb.append(sufijo);
     System.out.println(sb);
