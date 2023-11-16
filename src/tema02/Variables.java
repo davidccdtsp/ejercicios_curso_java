@@ -115,12 +115,12 @@ public class Variables {
 
     int entero = Integer.valueOf(stringEntero);
     float decimal = Float.valueOf(stringDecimal);
-    String stringNumero = "";
+    String stringNumero = Integer.toString(numero);
 
     System.out.println("String \"45\" transformado a entero = "+entero);
     System.out.println("String \"6.029\" transformado a float = "+decimal);
     System.out.println("El Apollo XI fue lanzado el 16 de Julio de "+numero+" desde Cape Kennedy");
-
+    System.out.println("El Apollo XI fue lanzado el 16 de Julio de "+stringNumero+" desde Cape Kennedy");
   }
 
 
