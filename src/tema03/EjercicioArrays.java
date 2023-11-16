@@ -20,6 +20,7 @@ public class EjercicioArrays {
     // Mostrar por pantalla las posiciones 0, 4 y última de numeros.
     System.out.println("numeros[0] = "+numeros[0]);
     System.out.println("numeros[4] = "+numeros[4]);
+    System.out.println("numeros["+(numeros.length-1)+"] = "+numeros[numeros.length-1]);
 
     // Mostrar por pantalla las posiciones 5, 6 y 10 de palabras.
     System.out.println("palabras[5] = "+palabras[5]);
