@@ -3,11 +3,12 @@ package tema03;
 import java.util.Arrays;
 
 public class EjercicioArrays {
-
+	
   public static void ejercicio01() {
 
     System.out.println("\n\nTema 3: Arrays");
     System.out.println("\nEjercicio 1");
+
 
     // Crear el array numeros {1789, 2035, 1899, 1456, 2013, 1458, 2458, 1254, 1472, 2365}.
     int[] numeros = {1789, 2035, 1899, 1456, 2013, 1458, 2458, 1254, 1472, 2365};
@@ -124,7 +125,7 @@ public class EjercicioArrays {
     int[] numeros = {1789, 2035, 1899, 1456, 2013, 1458, 2458, 1254, 1472, 2365};
     int[] copia1 = new int[numeros.length];
     
-    System.arraycopy(numeros, 0, copia1, 0, numeros.length);
+    System.arraycopy(numeros, 0, copia1, 0, copia1.length);
     int[] copia2 = Arrays.copyOf(numeros, numeros.length);
     
     System.out.println(Arrays.toString(numeros));
