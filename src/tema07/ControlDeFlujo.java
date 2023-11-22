@@ -68,7 +68,7 @@ public class ControlDeFlujo {
   public static void ejercicio04() {
     System.out.println("\nEjercicio 4");
     
-    int i = 0;
+    int i = 1;
     while(i<=100) {
     	System.out.print(i+", ");
     	i++;
@@ -83,10 +83,10 @@ public class ControlDeFlujo {
     System.out.println("\nEjercicio 5");
 
 //     Descomentar el siguiente codigo
-     final int numeroSecreto = (int)Math.floor(Math.random()*10.0);
-     int numero;
-     Scanner scanner = new Scanner(System.in);
-     System.out.println(numeroSecreto);
+//     final int numeroSecreto = (int)Math.floor(Math.random()*10.0);
+//     int numero;
+//     Scanner scanner = new Scanner(System.in);
+//     System.out.println(numeroSecreto);
 //
 //     do {
 //
@@ -94,7 +94,7 @@ public class ControlDeFlujo {
 //    	 numero = scanner.nextInt();
 //     
 //     } while(numero != numeroSecreto);
-     
+//     
      
   }
 
@@ -105,11 +105,11 @@ public class ControlDeFlujo {
     System.out.println("\nEjercicio 6");
     
     int i = 20;
-    while(i <= 30) {
+    do {
     	if(i%2==0)
     		System.out.print(i+", ");
     	i++;
-    }
+    } while(i<=30);
 
   }
 
@@ -151,7 +151,7 @@ public class ControlDeFlujo {
   public static void ejercicio09() {
     System.out.println("\nEjercicio 9");
 
-    int numeroDia = -9;
+    int numeroDia = 0;
     String dia = "";
     
     switch(numeroDia) {
@@ -193,38 +193,38 @@ public class ControlDeFlujo {
     System.out.println("\nEjercicio 10");
 
     // Descomentar el siguiente codigo
-//     Scanner entrada = new Scanner(System.in);
-//     char op;
-//     Double n1, n2, res;
-//
-//     System.out.println("+, -, *, or /");
-//     System.out.print("Escoge un operador:");
-//     op = entrada.next().charAt(0);
-//
-//     System.out.print("Introduce el Numero 1 :");
-//     n1 = entrada.nextDouble();
-//     System.out.print("Introduce el Numero 2 :");
-//     n2 = entrada.nextDouble();
+     Scanner entrada = new Scanner(System.in);
+     char op;
+     Double n1, n2, res;
+
+     System.out.println("+, -, *, or /");
+     System.out.print("Escoge un operador:");
+     op = entrada.next().charAt(0);
+
+     System.out.print("Introduce el Numero 1 :");
+     n1 = entrada.nextDouble();
+     System.out.print("Introduce el Numero 2 :");
+     n2 = entrada.nextDouble();
      
-//     double resultado = 0;
+     double resultado = 0;
      
-//     switch(op) {
-//     case '+':
-//    	 System.out.println(n1+" + "+n2+" = "+(n1+n2));
-//    	 break;
-//     case '-':
-//    	 System.out.println(n1+" - "+n2+" = "+(n1-n2));
-//    	 break;
-//     case '*':
-//    	 System.out.println(n1+" * "+n2+" = "+(n1*n2));
-//    	 break;
-//     case '/':
-//    	 System.out.println(n1+" / "+n2+" = "+(n1/n2));
-//    	 break;
-//    default:
-//    	System.out.println("Operacion no sportada");
-//    	break;
-//     }
+     switch(op) {
+     case '+':
+    	 System.out.println(n1+" + "+n2+" = "+(n1+n2));
+    	 break;
+     case '-':
+    	 System.out.println(n1+" - "+n2+" = "+(n1-n2));
+    	 break;
+     case '*':
+    	 System.out.println(n1+" * "+n2+" = "+(n1*n2));
+    	 break;
+     case '/':
+    	 System.out.println(n1+" / "+n2+" = "+(n1/n2));
+    	 break;
+    default:
+    	System.out.println("Operacion no sportada");
+    	break;
+     }
 
 
   }
