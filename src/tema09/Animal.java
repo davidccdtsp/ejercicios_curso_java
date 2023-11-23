@@ -7,7 +7,6 @@ public class Animal implements Cloneable{
 	
 	private final static Logger LOGGER = Logger.getLogger(Animal.class.getName());
 
-
 	String nombre;
 	final TipoAnimal tipo;
 	private int energia = 100;
@@ -49,6 +48,7 @@ public class Animal implements Cloneable{
 	}
 
 	public void mueve(int distancia) {
+		dormido = false;
 		System.out.println("El animal " + nombre + "se mueve " + distancia + "m");
 	}
 

@@ -67,18 +67,20 @@ public class App {
 //        ClasesyObjetos.ejercicio07();
 //
 //    	  Tema 9
-        Herencia.ejercicio01();
-        Herencia.ejercicio02();
-        Herencia.ejercicio03();
-        Herencia.ejercicio04();
-        Herencia.ejercicio05();
-        Herencia.ejercicio06();
-        Herencia.ejercicio07();
-        Herencia.ejercicio08();
+//        Herencia.ejercicio01();
+//        Herencia.ejercicio02();
+//        Herencia.ejercicio03();
+//        Herencia.ejercicio04();
+//        Herencia.ejercicio05();
+//        Herencia.ejercicio06();
+//        Herencia.ejercicio07();
+//        Herencia.ejercicio08();
 //
-//        Interfaces.ejercicio01();
-//        Interfaces.ejercicio02();
-//        Interfaces.ejercicio03();
+//    	  Tema 10
+        Interfaces.ejercicio01();
+        Interfaces.ejercicio02();
+        Interfaces.ejercicio03();
+        Interfaces.ejercicio04();
 //
 //        // Tema 11
 //        ClasesAnidadas.ejercicio01();

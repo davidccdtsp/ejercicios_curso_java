@@ -61,7 +61,7 @@ public class Herencia {
     Animal gato = new Gato("Michi","Mestizo");
     Animal gallina = new Gallina("Blanquita","blanco");
     
-    gato.mueve(1000);
+    gato.mueve(10);
     gallina.mueve(1000);
     
 
