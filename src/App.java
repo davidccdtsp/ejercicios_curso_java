@@ -58,23 +58,23 @@ public class App {
 //        ControlDeFlujo.ejercicio14();
 //
 //        // Tema 8
-        ClasesyObjetos.ejercicio01();
-        ClasesyObjetos.ejercicio02();
-        ClasesyObjetos.ejercicio03();
-        ClasesyObjetos.ejercicio04();
-        ClasesyObjetos.ejercicio05();
-        ClasesyObjetos.ejercicio06();
-        ClasesyObjetos.ejercicio07();
+//        ClasesyObjetos.ejercicio01();
+//        ClasesyObjetos.ejercicio02();
+//        ClasesyObjetos.ejercicio03();
+//        ClasesyObjetos.ejercicio04();
+//        ClasesyObjetos.ejercicio05();
+//        ClasesyObjetos.ejercicio06();
+//        ClasesyObjetos.ejercicio07();
 //
 //    	  Tema 9
-//        Herencia.ejercicio01();
-//        Herencia.ejercicio02();
-//        Herencia.ejercicio03();
-//        Herencia.ejercicio04();
-//        Herencia.ejercicio05();
-//        Herencia.ejercicio06();
-//        Herencia.ejercicio07();
-//        Herencia.ejercicio08();
+        Herencia.ejercicio01();
+        Herencia.ejercicio02();
+        Herencia.ejercicio03();
+        Herencia.ejercicio04();
+        Herencia.ejercicio05();
+        Herencia.ejercicio06();
+        Herencia.ejercicio07();
+        Herencia.ejercicio08();
 //
 //        Interfaces.ejercicio01();
 //        Interfaces.ejercicio02();
