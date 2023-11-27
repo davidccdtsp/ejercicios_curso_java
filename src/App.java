@@ -77,18 +77,18 @@ public class App {
 //        Herencia.ejercicio08();
 //
 //    	  Tema 10
-        Interfaces.ejercicio01();
-        Interfaces.ejercicio02();
-        Interfaces.ejercicio03();
-        Interfaces.ejercicio04();
+//        Interfaces.ejercicio01();
+//        Interfaces.ejercicio02();
+//        Interfaces.ejercicio03();
+//        Interfaces.ejercicio04();
 //
 //        // Tema 11
-//        ClasesAnidadas.ejercicio01();
-//        ClasesAnidadas.ejercicio02();
-//        ClasesAnidadas.ejercicio03();
-//        ClasesAnidadas.ejercicio04();
-//        ClasesAnidadas.ejercicio05();
-//        ClasesAnidadas.ejercicio06();
+        ClasesAnidadas.ejercicio01();
+        ClasesAnidadas.ejercicio02();
+        ClasesAnidadas.ejercicio03();
+        ClasesAnidadas.ejercicio04();
+        ClasesAnidadas.ejercicio05();
+        ClasesAnidadas.ejercicio06();
 //
 //        // Tema 12
 //        PaquetesYModulos.ejercicio01();

@@ -51,7 +51,7 @@ public class Interfaces {
 		class Cuadrado implements Poligono {
 
 			private final int NUMERO_LADOS = 4;
-			private int largo;
+			private int largo = 10;
 
 			@Override
 			public int calcularSuperficie() {
