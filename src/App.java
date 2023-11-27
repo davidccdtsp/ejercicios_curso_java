@@ -83,19 +83,19 @@ public class App {
 //        Interfaces.ejercicio04();
 //
 //        // Tema 11
-        ClasesAnidadas.ejercicio01();
-        ClasesAnidadas.ejercicio02();
-        ClasesAnidadas.ejercicio03();
-        ClasesAnidadas.ejercicio04();
-        ClasesAnidadas.ejercicio05();
-        ClasesAnidadas.ejercicio06();
+//        ClasesAnidadas.ejercicio01();
+//        ClasesAnidadas.ejercicio02();
+//        ClasesAnidadas.ejercicio03();
+//        ClasesAnidadas.ejercicio04();
+//        ClasesAnidadas.ejercicio05();
+//        ClasesAnidadas.ejercicio06();
 //
 //        // Tema 12
 //        PaquetesYModulos.ejercicio01();
 //
 //        // Tema 13
-//        Genericos.ejercicio01();
-//        Genericos.ejercicio02();
+        Genericos.ejercicio01();
+        Genericos.ejercicio02();
 //
 //        // Tema 14 - Expresiones lambda
 //        Lambdas.ejercicio01();

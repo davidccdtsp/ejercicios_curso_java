@@ -1,6 +1,6 @@
 package tema11;
 
-import tema11.Solucion.SolEstatica;
+//import tema11.Solucion.SolEstatica;
 
 public class ClasesAnidadas {
 
@@ -52,7 +52,7 @@ public class ClasesAnidadas {
 	public static void ejercicio04() {
 		System.out.println("\nEjercicio 4");
 		
-		SolEstatica solEstatica = new SolEstatica();
+		Solucion.SolEstatica solEstatica = new Solucion.SolEstatica();
 
 		 System.out.println("Creada clase interna estatica: "
 		 +solEstatica.getClass());
@@ -84,9 +84,7 @@ public class ClasesAnidadas {
 	public static void ejercicio06() {
 		System.out.println("\nEjericio 6");
 		
-		ICosa anonima = new ICosa() {
-			
-		};
+		ICosa anonima = new ICosa() {};
 		
 		anonima.diAlgo();
 	}
