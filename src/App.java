@@ -96,6 +96,7 @@ public class App {
 //        // Tema 13
         Genericos.ejercicio01();
         Genericos.ejercicio02();
+        Genericos.ejercicio03();
 //
 //        // Tema 14 - Expresiones lambda
 //        Lambdas.ejercicio01();
