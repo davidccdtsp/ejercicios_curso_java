@@ -96,7 +96,7 @@ public class Genericos {
 	}
 	
 	/*
-	 * Cambiar el metodo invierte para que funcione con genericos
+	 * Modificar la clase para que funcione con genericos
 	 */
 	public static void ejercicio03() {
 		System.out.println("\nEjercicio 3");

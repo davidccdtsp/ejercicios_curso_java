@@ -94,27 +94,27 @@ public class App {
 //        PaquetesYModulos.ejercicio01();
 //
 //        // Tema 13
-        Genericos.ejercicio01();
-        Genericos.ejercicio02();
-        Genericos.ejercicio03();
+//        Genericos.ejercicio01();
+//        Genericos.ejercicio02();
+//        Genericos.ejercicio03();
 //
 //        // Tema 14 - Expresiones lambda
-//        Lambdas.ejercicio01();
-//        Lambdas.ejercicio02();
-//        Lambdas.ejercicio03();
-//        Lambdas.ejercicio04();
-//        Lambdas.ejercicio05();
-//        Lambdas.ejercicio06();
-//        Lambdas.ejercicio07();
-//        Lambdas.ejercicio08();
-//        Lambdas.ejercicio09();
-//        Lambdas.ejercicio10();
-//        Lambdas.ejercicio11();
-//        Lambdas.ejercicio12();
-//        Lambdas.ejercicio13();
-//        Lambdas.ejercicio14();
-//        Lambdas.ejercicio15();
-//        Lambdas.ejercicio16();
+        Lambdas.ejercicio01();
+        Lambdas.ejercicio02();
+        Lambdas.ejercicio03();
+        Lambdas.ejercicio04();
+        Lambdas.ejercicio05();
+        Lambdas.ejercicio06();
+        Lambdas.ejercicio07();
+        Lambdas.ejercicio08();
+        Lambdas.ejercicio09();
+        Lambdas.ejercicio10();
+        Lambdas.ejercicio11();
+        Lambdas.ejercicio12();
+        Lambdas.ejercicio13();
+        Lambdas.ejercicio14();
+        Lambdas.ejercicio15();
+        Lambdas.ejercicio16();
 //
 //        // Tema 15 - Excepciones
 //        Excepciones.ejercicio01();
