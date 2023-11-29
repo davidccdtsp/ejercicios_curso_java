@@ -2,71 +2,101 @@ package tema15;
 
 public class Excepciones {
 
-  /*
-   * Completar el siguiente codigo con try catch
-   */
-  public static void ejercicio01() {
-    System.out.println("\n\nTema 15: Excepciones");
-    System.out.println("\nEjercicio 1");
+	/*
+	 * Completar el siguiente codigo con try catch
+	 */
+	public static void ejercicio01() {
+		System.out.println("\n\nTema 15: Excepciones");
+		System.out.println("\nEjercicio 1");
+		
+		
+		
+		try {
+			Class.forName("FindMissingClass");
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println("Manejando excepcion ClassNotFoundException");
+		}
 
-    // Class.forName("FindMissingClass");
+	}
 
-  }
+	/*
+	 * Crear una excepción propia que extienda de Error y probarla
+	 */
 
-  /*
-   * Crear una excepción propia que extienda de Error y probarla
-   */
-  public static void ejercicio02() {
-    System.out.println("\nEjercicio 2");
+	public static void ejercicio02() {
+		System.out.println("\nEjercicio 2");
 
-  }
+		class MiError extends Error {
+			String mensaje;
 
-  /**
-   * Corregir el siguiente codigo
-   */
-  public static void ejericico03() {
-    System.out.println("\nEjercicio 3");
+			MiError(String mensaje) {
+				this.mensaje = mensaje;
+			}
 
-    int a = 0;
+			public String toString() {
+				return mensaje;
+			}
+		}
 
-    // try {
-    // int b = 1/0; // ArithmenticException
-    // } finally {
+		try {
+			throw new MiError("Mensaje indicativo");
+		} catch (MiError e) {
+			System.out.println(e);
+		}
+	}
 
-    // }
+	/**
+	 * Corregir el siguiente codigo
+	 */
+	public static void ejericico03() {
+		System.out.println("\nEjercicio 3");
 
-  }
+		int a = 0;
 
-  /*
-   * Modificar el siguiente codigo para que maneje las ArithmeticException de un modo especfico
-   */
-  public static void ejercicio04() {
-    System.out.println("\nEjercicio 4");
+		try {
+			int b = 1 / 0; // ArithmenticException
+		} catch (Exception e) {
+			System.out.println("Capturada excepcion " + e);
+		} finally {
+			System.out.println("Bloque finally");
+		}
 
-    int[] array = {1, 2, 3};
+	}
 
-    try {
+	/*
+	 * Modificar el siguiente codigo para que maneje las ArithmeticException de un
+	 * modo especfico
+	 */
+	public static void ejercicio04() {
+		System.out.println("\nEjercicio 4");
 
-      // int num = array[4]; // ArrayIndexOutOfBoundsException
-      // int val = array[0]/0; // ArithmenticException
+		int[] array = { 1, 2, 3 };
 
-    } catch (Exception e) {
-      System.out.println("Manejando excepcion " + e.toString());
-    }
+		try {
+			int num = array[4]; // ArrayIndexOutOfBoundsException
+		} catch (Exception e) {
+			System.out.println("Manejando excepcion " + e.toString());
+			try {
+				int val = array[0] / 0; // ArithmenticException
+			} catch (ArithmeticException e2) {
+				System.out.println("Bloque de manejo especifico de excepciones ArithmeticException "+e2);
+			}
+		}
 
-  }
+	}
 
-  /*
-   * Que problema tiene el siguiente codigo
-   */
-  public static void ejercicio05() {
-    System.out.println("\nEjercicio 5");
+	/*
+	 * Que problema tiene el siguiente codigo
+	 */
+	public static void ejercicio05() {
+		System.out.println("\nEjercicio 5");
 
-    // try {
-    //   throw new AssertionError();
-    // } catch (Exception e) {
-    //   System.out.println("Capturando error ");
-    // }
-  }
+		 try {
+			 throw new AssertionError();
+		 } catch (AssertionError e) {
+			 System.out.println("Capturando error ");
+		 }
+	}
 
 }

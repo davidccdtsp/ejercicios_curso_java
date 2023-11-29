@@ -152,7 +152,7 @@ public class Lambdas {
 
 		Integer[] numeros = { 127, 996, 1, 24, 800 };
 
-		// Predicate<Integer> lambda = i -> i < 500;
+//		 Predicate<Integer> lambda = i -> i < 500;
 		IntPredicate lambda = i -> i < 500;
 
 		for (int i = 0; i < numeros.length; i++) {
@@ -163,7 +163,7 @@ public class Lambdas {
 
 	/*
 	 * Escribir una expresion lambda que tome dos argumentos un String y un int y
-	 * que compare la longitud del String con el valor del int Aplicarlo al array
+	 * que compare la longitud del String con el valor del int. Aplicarlo a ambos arrays
 	 */
 	public static void ejercicio07() {
 		System.out.println("\n\nEjercicio 7");
@@ -195,6 +195,10 @@ public class Lambdas {
 			Caja(String contenido) {
 				this.contenido = contenido;
 			}
+			
+			public String toString() {
+				return contenido;
+			}
 		}
 
 		String[] objetos = { "Smarphone", "Bicicleta", "Mesa", "Silla", "Zapatos" };
@@ -207,7 +211,7 @@ public class Lambdas {
 		}
 		
 		for(int j = 0; j<objetos.length; j++)
-			System.out.print(objetos[j]+", ");
+			System.out.print(cajas[j]+", ");
 	}
 
 	/*
@@ -271,7 +275,7 @@ public class Lambdas {
 		Predicate<String> mayorQue5 = s -> s.length() > 5;
 		Predicate<String> noNula = s -> s != null;
 
-		Predicate<String> lambdaEquivalente = enMayus.and(noNula).and(mayorQue5);
+		Predicate<String> lambdaEquivalente = noNula.and(mayorQue5).and(enMayus);
 
 		boolean res1 = lambdaOriginal.test("Casa");
 		boolean res2 = lambdaEquivalente.test("Casa");
@@ -295,7 +299,7 @@ public class Lambdas {
 		Predicate<String> noEsVacia = esVacia.negate();
 		
 		System.out.println("\"cadena\" es vacia = "+esVacia.test("cadena"));
-		System.out.println("\"cadena\" no es vacia ="+noEsVacia.test("cadena"));
+		System.out.println("\"cadena\" no es vacia = "+noEsVacia.test("cadena"));
 	}
 
 	/*
