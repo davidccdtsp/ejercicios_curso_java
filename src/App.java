@@ -20,14 +20,14 @@ public class App {
     public static void main(String[] args) throws Exception {
 
         // // Tema 2
-        Variables.ejercicio01();
-        Variables.ejercicio02();
-        Variables.ejercicio03();
-        Variables.ejercicio04();
-        Variables.ejercicio05();
-        Variables.ejercicio06();
-        Variables.ejercicio07();
-        Variables.ejercicio08();
+        // Variables.ejercicio01();
+        // Variables.ejercicio02();
+        // Variables.ejercicio03();
+        // Variables.ejercicio04();
+        // Variables.ejercicio05();
+        // Variables.ejercicio06();
+        // Variables.ejercicio07();
+        // Variables.ejercicio08();
 
         // // Tema 3
         EjercicioArrays.ejercicio01();
