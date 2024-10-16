@@ -30,18 +30,18 @@ public class App {
         // Variables.ejercicio08();
 
         // // Tema 3
-        EjercicioArrays.ejercicio01();
-        EjercicioArrays.ejercicio02();
-        EjercicioArrays.ejercicio03();
-        EjercicioArrays.ejercicio04();
-        EjercicioArrays.ejercicio05();
-        EjercicioArrays.ejercicio06();
+        // EjercicioArrays.ejercicio01();
+        // EjercicioArrays.ejercicio02();
+        // EjercicioArrays.ejercicio03();
+        // EjercicioArrays.ejercicio04();
+        // EjercicioArrays.ejercicio05();
+        // EjercicioArrays.ejercicio06();
 
         // // Tema 4
-        // Operadores.ejercicio01();
-        // Operadores.ejercicio02();
-        // Operadores.ejercicio03();
-        // Operadores.ejercicio04();
+        Operadores.ejercicio01();
+        Operadores.ejercicio02();
+        Operadores.ejercicio03();
+        Operadores.ejercicio04();
 
         // // Tema 5
         // ControlDeFlujo.ejercicio01();
