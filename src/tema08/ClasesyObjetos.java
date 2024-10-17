@@ -1,7 +1,5 @@
 package tema08;
 
-import org.junit.Assert;
-
 public class ClasesyObjetos {
 
   /*

@@ -15,7 +15,6 @@ import java.util.function.IntBinaryOperator;
 import java.util.function.IntSupplier;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
-import org.junit.Assert;
 
 public class Lambdas {
 
