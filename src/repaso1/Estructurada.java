@@ -12,7 +12,7 @@ public class Estructurada {
    * arrayChar = [ 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P',
    * 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' ];
    * 
-   * numeros = [15, 11, 1, 19, 18, 14, 13]
+   * numeros = [15, 11, 0, 19,  14, 13]
    * 
    * Resultado: PLATON
    * 
@@ -21,12 +21,33 @@ public class Estructurada {
     char[] arrayChar = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O',
         'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
 
-    char[] numeros = {};
+        int[] numeros = {15, 11, 0, 19, 14, 13};
+
+        StringBuilder sb = new StringBuilder();
+    
+        for(int i : numeros){
+          sb.append(arrayChar[i]);
+        }
+    
+        // for(int n = 0; n<numeros.length; n++){
+        //   int pos = numeros[n];
+        //   char letra = arrayChar[pos];
+        //   sb.append(letra);
+        // }
+    
+        // int p = 0;
+        // while(p<numeros.length){
+        //   int pos = numeros[p];
+        //   char letra = arrayChar[pos];
+        //   sb.append(letra);
+        // }
+    
+        System.out.println(sb);
 
   }
 
   /**
-   * Dado un array de enteros, devolve la mayor suma de dos elementos del array. Si el array fuese
+   * Dado un array de enteros, devolver la mayor suma de dos elementos del array. Si el array fuese
    * de tamano 0 o 1 devolver 0.
    * 
    * Ejemplo:
@@ -38,40 +59,59 @@ public class Estructurada {
    */
 
   public static int sol02(int[] arr) {
+    int a = 0;
+    int b = 0;
     int result = 0;
-    return result;
+
+    if (arr.length <= 1) {
+      return result;
+    } else {
+      a = arr[0];
+      b = arr[1];
+
+      for (int i = 2; i < arr.length; i++) {
+        if(a>=b && arr[i]>b){
+          b = arr[i];
+        } else if(b>a && arr[i]>a){
+          a = arr[i];
+        }
+      }
+
+      result = a + b;
+      return result;
+    }
   }
 
   public static void ejercicio02() {
     System.out.println();
     System.out.println("Ejercicio 02");
 
-    int[] arr1 = {12, 34, 10, 6, 40};
-    System.out.println("Caso 1: " + sol02(arr1)); // Resultado esperado: 74
+    // int[] arr1 = {12, 34, 10, 6, 40};
+    // System.out.println("Caso 1: " + sol02(arr1)); // Resultado esperado: 74
 
-    // Caso 2: Array de tamaño 0
-    int[] arr2 = {};
-    System.out.println("Caso 2: " + sol02(arr2)); // Resultado esperado: 0
+    // // Caso 2: Array de tamaño 0
+    // int[] arr2 = {};
+    // System.out.println("Caso 2: " + sol02(arr2)); // Resultado esperado: 0
 
-    // Caso 3: Array de tamaño 1
-    int[] arr3 = {5};
-    System.out.println("Caso 3: " + sol02(arr3)); // Resultado esperado: 0
+    // // Caso 3: Array de tamaño 1
+    // int[] arr3 = {5};
+    // System.out.println("Caso 3: " + sol02(arr3)); // Resultado esperado: 0
 
     // Caso 4: Array con números negativos
     int[] arr4 = {-10, -20, -5, -30};
     System.out.println("Caso 4: " + sol02(arr4)); // Resultado esperado: -5 + (-10) = -15
 
-    // Caso 5: Array con números iguales
-    int[] arr5 = {3, 3, 3, 3};
-    System.out.println("Caso 5: " + sol02(arr5)); // Resultado esperado: 6
+    // // Caso 5: Array con números iguales
+    // int[] arr5 = {3, 3, 3, 3};
+    // System.out.println("Caso 5: " + sol02(arr5)); // Resultado esperado: 6
 
-    // Caso 6: Array con números positivos y negativos
-    int[] arr6 = {-1, -2, 5, 3, -4};
-    System.out.println("Caso 6: " + sol02(arr6)); // Resultado esperado: 5 + 3 = 8
+    // // Caso 6: Array con números positivos y negativos
+    // int[] arr6 = {-1, -2, 5, 3, -4};
+    // System.out.println("Caso 6: " + sol02(arr6)); // Resultado esperado: 5 + 3 = 8
 
-    // Caso 7: Array con un par de valores máximos iguales
-    int[] arr7 = {100, 100, 2, 50, 75};
-    System.out.println("Caso 7: " + sol02(arr7));
+    // // Caso 7: Array con un par de valores máximos iguales
+    // int[] arr7 = {100, 100, 2, 50, 75};
+    // System.out.println("Caso 7: " + sol02(arr7));
   }
 
   /**
@@ -95,7 +135,18 @@ public class Estructurada {
 
   public static int sol03(int[] arr) {
 
+    int temp = 0;
     int result = 0;
+
+    for (int i = 1; i < arr.length; i++) {
+        int prev = arr[i - 1];
+        if (prev < arr[i]) {
+          temp++;
+          result = (temp > result) ? temp : result;
+        } else {
+          temp = 0;
+        }
+    }
 
     return result;
   }
@@ -157,8 +208,15 @@ public class Estructurada {
    * 
    */
   public static String sol04(String sentence) {
+    String[] words = sentence.split("\\.");
     String result = "";
 
+    for (int i = words.length-1; i >= 0; i--) {
+      result = result.concat(words[i]);
+      if (i != 0) {
+        result = result.concat(".");
+      }
+    }
     return result;
   }
 
@@ -172,8 +230,5 @@ public class Estructurada {
 
   }
 
-  public static void ejercicio05() {
-
-  }
 
 }
