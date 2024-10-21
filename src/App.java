@@ -44,22 +44,22 @@ public class App {
         // Operadores.ejercicio04();
 
         // // Tema 5
-        ControlDeFlujo.ejercicio01();
-        ControlDeFlujo.ejercicio02();
-        ControlDeFlujo.ejercicio03(24, 43, 1);
-        ControlDeFlujo.ejercicio04();
-        ControlDeFlujo.ejercicio05();
-        ControlDeFlujo.ejercicio06();
-        ControlDeFlujo.ejercicio07();
-        ControlDeFlujo.ejercicio09();
-        ControlDeFlujo.ejercicio10();
-        ControlDeFlujo.ejercicio11();
-        ControlDeFlujo.ejercicio12();
-        ControlDeFlujo.ejercicio13();
-        ControlDeFlujo.ejercicio14();
+        // ControlDeFlujo.ejercicio01();
+        // ControlDeFlujo.ejercicio02();
+        // ControlDeFlujo.ejercicio03(24, 43, 1);
+        // ControlDeFlujo.ejercicio04();
+        // ControlDeFlujo.ejercicio05();
+        // ControlDeFlujo.ejercicio06();
+        // ControlDeFlujo.ejercicio07();
+        // ControlDeFlujo.ejercicio09();
+        // ControlDeFlujo.ejercicio10();
+        // ControlDeFlujo.ejercicio11();
+        // ControlDeFlujo.ejercicio12();
+        // ControlDeFlujo.ejercicio13();
+        // ControlDeFlujo.ejercicio14();
 
         // // Tema 8
-        // ClasesyObjetos.ejercicio01();
+        ClasesyObjetos.ejercicio01();
         // ClasesyObjetos.ejercicio02();
         // ClasesyObjetos.ejercicio03();
         // ClasesyObjetos.ejercicio04();

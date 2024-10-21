@@ -1,5 +1,7 @@
 package tema08;
 
+import org.junit.*;
+
 public class ClasesyObjetos {
 
   /*
@@ -27,23 +29,24 @@ public class ClasesyObjetos {
     System.out.println("\nEjercicio 1");
 
 
-    NaveEspacial nave = null;
+    NaveEspacial nave = new NaveEspacial("USG Ishimura");
     // Descomentar para probar
-    // Assert.assertNotNull(" != null",nave);
-    // Assert.assertEquals(nave.getMasa(), 0);
-    // Assert.assertEquals("velocidad = 0", 0, nave.getVelocidad());
-    // Assert.assertEquals(nave.getPosicion()[0], 0);
-    // Assert.assertEquals(nave.getPosicion()[1], 0);
-    // int[] expectedPos = {0,0};
-    // Assert.assertArrayEquals(nave.getPosicion(),expectedPos);
-    // Assert.assertEquals(nave.getMasa(),0);
-    // Assert.assertEquals(nave.getEscudos(), 0);
-    // Assert.assertEquals(nave.getPorpulsion(), 0);
-    // Assert.assertEquals(nave.setPropulsion(), 50);
-    // Assert.assertEquals(nave.setEscudos(30),30);
-    // int totalEnergia = nave.getEscudos() + nave.getPropusion();
-    // Assert.assertTrue(totalEnergia < 100);
-    // Assert.assertEquals(nave.setPropulsion(80), 70);
+    Assert.assertNotNull(" != null",nave);
+    Assert.assertEquals(nave.getMasa(), 0);
+    Assert.assertEquals("velocidad = 0", 0, nave.getVelocidad());
+    Assert.assertEquals(nave.getPosicion()[0], 0);
+    Assert.assertEquals(nave.getPosicion()[1], 0);
+    int[] expectedPos = {0,0};
+    Assert.assertArrayEquals(nave.getPosicion(),expectedPos);
+    Assert.assertEquals(nave.getMasa(),0);
+    Assert.assertEquals(nave.getEscudos(), 0);
+    Assert.assertEquals(nave.getPropulsion(), 0);
+    Assert.assertEquals(nave.setPropulsion(50), 50);
+    Assert.assertEquals(nave.setEscudos(30),30);
+    int totalEnergia = nave.getEscudos() + nave.getPropulsion();
+    Assert.assertTrue(totalEnergia < 100);
+    Assert.assertEquals(nave.setPropulsion(80), 70);
+    Assert.assertEquals(nave.setPropulsion(800), 70);
   };
 
   /*
