@@ -40,12 +40,13 @@ public class ClasesyObjetos {
     // Assert.assertArrayEquals(nave.getPosicion(),expectedPos);
     // Assert.assertEquals(nave.getMasa(),0);
     // Assert.assertEquals(nave.getEscudos(), 0);
-    // Assert.assertEquals(nave.getPorpulsion(), 0);
-    // Assert.assertEquals(nave.setPropulsion(), 50);
+    // Assert.assertEquals(nave.getPropulsion(), 0);
+    // Assert.assertEquals(nave.setPropulsion(50), 50);
     // Assert.assertEquals(nave.setEscudos(30),30);
-    // int totalEnergia = nave.getEscudos() + nave.getPropusion();
+    // int totalEnergia = nave.getEscudos() + nave.getPropulsion();
     // Assert.assertTrue(totalEnergia < 100);
     // Assert.assertEquals(nave.setPropulsion(80), 70);
+    // Assert.assertEquals(nave.setPropulsion(800), 70);
   };
 
   /*
