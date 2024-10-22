@@ -32,21 +32,21 @@ public class ClasesyObjetos {
     NaveEspacial nave = new NaveEspacial("USG Ishimura");
     // Descomentar para probar
     Assert.assertNotNull(" != null",nave);
-    Assert.assertEquals(nave.getMasa(), 0);
+    Assert.assertEquals(0,nave.getMasa());
     Assert.assertEquals("velocidad = 0", 0, nave.getVelocidad());
-    Assert.assertEquals(nave.getPosicion()[0], 0);
-    Assert.assertEquals(nave.getPosicion()[1], 0);
+    Assert.assertEquals(0,nave.getPosicion()[0]);
+    Assert.assertEquals(0,nave.getPosicion()[1]);
     int[] expectedPos = {0,0};
-    Assert.assertArrayEquals(nave.getPosicion(),expectedPos);
-    Assert.assertEquals(nave.getMasa(),0);
-    Assert.assertEquals(nave.getEscudos(), 0);
-    Assert.assertEquals(nave.getPropulsion(), 0);
-    Assert.assertEquals(nave.setPropulsion(50), 50);
-    Assert.assertEquals(nave.setEscudos(30),30);
+    Assert.assertArrayEquals(expectedPos, nave.getPosicion());
+    Assert.assertEquals(0, nave.getMasa());
+    Assert.assertEquals(0, nave.getEscudos());
+    Assert.assertEquals(0, nave.getPropulsion());
+    Assert.assertEquals(50, nave.setPropulsion(50));
+    Assert.assertEquals(30, nave.setEscudos(30));
     int totalEnergia = nave.getEscudos() + nave.getPropulsion();
     Assert.assertTrue(totalEnergia < 100);
-    Assert.assertEquals(nave.setPropulsion(80), 70);
-    Assert.assertEquals(nave.setPropulsion(800), 70);
+    Assert.assertEquals(70, nave.setPropulsion(80));
+    Assert.assertEquals(70,nave.setPropulsion(800));
   };
 
   /*
@@ -57,14 +57,14 @@ public class ClasesyObjetos {
   public static void ejercicio02() {
     System.out.println("\nEjercicio 2");
 
-    NaveEspacial nave = null;
+    NaveEspacial nave = new NaveEspacial("USS Entreprise");;
     // Descomentar para probar
-    // Assert.assertEquals(nave.getEnergia(), 0);
-    // nave.repostar(1000));
-    // Assert.assertEquals(1000, nave.repostar(1000));
-    // Assert.assertEquals(nave.getEnergia(), 1000);
-    // Assert.assertEquals(nave.consumirEnergia(500), 500);
-    // Assert.assertEquals(nave.consumirEnergia(501), 0);
+    Assert.assertEquals(0,nave.getEnergia());
+    nave.repostar(1000);
+    Assert.assertEquals(1000, nave.getEnergia());
+    Assert.assertEquals(1000, nave.getEnergia());
+    Assert.assertEquals(500, nave.consumirEnergia(500));
+    Assert.assertEquals(0, nave.consumirEnergia(501));
 
   };
 
@@ -94,20 +94,21 @@ public class ClasesyObjetos {
   public static void ejercicio03() {
     System.out.println("\nEjercicio 3");
 
-    Carguero carguero = null;
+    Carguero carguero = new Carguero("USG Ishimura");
     // Descomentar para probar
-    // Assert.assertEquals(carguero.getMasa(), 500000);
-    // Assert.assertEquals(carguero.repostar(1000001), 1000000);
-    // carguero.cargar(500000);
-    // Assert.assertEquals(carguero.getMasaTotal(), 1000000);
-    // Assert.assertEquals(carguero.getCarga(), 500000);
-    // carguero.descargar(250000);
-    // Assert.assertEquals(carguero.getCarga(), 250000);
+    Assert.assertEquals(carguero.getMasa(), 500000);
+    carguero.repostar(1000001);
+    Assert.assertEquals(1000000, carguero.getEnergia());
+    carguero.cargar(500000);
+    Assert.assertEquals(1000000, carguero.getMasaTotal());
+    Assert.assertEquals(500000, carguero.getCarga());
+    carguero.descargar(250000);
+    Assert.assertEquals(250000, carguero.getCarga());
 
-    // Assert.assertEquals(carguero.setEscudos(30),20);
-    // Assert.assertEquals(carguero.getEnergia(), 999970);
-    // carguero.setPropulsion(40);
-    // Assert.assertEquals(carguero.getEnergia(), 999740);
+    Assert.assertEquals(20, carguero.setEscudos(30));
+    Assert.assertEquals(999980, carguero.getEnergia());
+    carguero.setPropulsion(40);
+    Assert.assertEquals(999190, carguero.getEnergia());
 
   };
 
@@ -123,17 +124,26 @@ public class ClasesyObjetos {
   public static void ejercicio04() {
     System.out.println("\nEjercicio 4");
 
-
-    // Carguero carguero = new Carguero("\"USG Ishimura");
-    // Assert.assertEquals(carguero.getNombre(), "USG Ishimura");
+    // Descomentar para probar
+    Carguero carguero = new Carguero("USG Ishimura");
+    Assert.assertEquals(carguero.getNombre(), "USG Ishimura");
+    Assert.assertNotNull(" != null",carguero);
+    Assert.assertEquals("velocidad = 0", 0, carguero.getVelocidad());
+    Assert.assertEquals(0,carguero.getPosicion()[0]);
+    Assert.assertEquals(0,carguero.getPosicion()[1]);
+    int[] expectedPos = {0,0};
+    Assert.assertArrayEquals(expectedPos, carguero.getPosicion());
+    Assert.assertEquals(0, carguero.getCarga());
+    Assert.assertEquals(0, carguero.getEscudos());
+    Assert.assertEquals(0, carguero.getPropulsion());
 
 
     // Descomentar para probar
-    // carguero = new Carguero("USG Ishimura",10000,20000);
-    // Assert.assertNotNull(carguero);
-    // Assert.assertEquals(carguero.getNombre(), "USG Ishimura");
-    // Assert.assertEquals(carguero.getEnergia(), 10000);
-    // Assert.assertEquals(carguero.getCarga(),20000);
+    carguero = new Carguero("USG Ishimura",10000,20000);
+    Assert.assertNotNull(carguero);
+    Assert.assertEquals(carguero.getNombre(), "USG Ishimura");
+    Assert.assertEquals(carguero.getEnergia(), 10000);
+    Assert.assertEquals(carguero.getCarga(),20000);
 
   };
 
@@ -154,11 +164,13 @@ public class ClasesyObjetos {
   public static void ejercicio05() {
     System.out.println("\nEjercicio 5");
 
-    // NaveEspacial naveComercial = new NaveComercial();
-    // NaveEspacial carguero = new Carguero("USG Ishimura");
+    NaveEspacial.reiniciarContador();
 
-    // Assert.assertEquals(naveComercial.getNumSerie(), "COM0");
-    // Assert.assertEquals(carguero.getNumSerie(), "CA1");
+    NaveEspacial naveComercial = new NaveComercial();
+    NaveEspacial carguero = new Carguero("USG Ishimura");
+
+    Assert.assertEquals(naveComercial.getNumSerie(), "COM0");
+    Assert.assertEquals(carguero.getNumSerie(), "CA1");
 
   };
 
@@ -171,16 +183,14 @@ public class ClasesyObjetos {
       S, M, L, XL;
 
       int getTalla(){
-
-        // switch(this) {
-        //   case S: return 30;
-        //   case M: return 32;
-        //   case L: return 36;
-        //   case XL: return 40;
-        //   default: return 0;
-        // }
-
-        return 0;
+        switch(this) {
+          case S: return 30;
+          case M: return 32;
+          case L: return 36;
+          case XL: return 40;
+          default: return 0;
+        }
+        // return 0;
       }
     }
   
@@ -189,13 +199,37 @@ public class ClasesyObjetos {
 
     System.out.println("La talla M es: "+Talla.M.getTalla());
   }
+
+  /**
+   *  Crear un record para Cliente con los siguientes atributos: nombre, email y saldo
+
+   */
+
+  record Cliente(String nombre, String email, double saldo){
+    public Cliente(String nombre, String email){
+      this(nombre, email, 0);
+    }
+  } 
+
+  public static void ejercicio07() {
+    System.out.println("\nEjericio 7");
+
+    Cliente cliente = new Cliente("Robert Noyce","r.noyce@farichild.com", 100000);
+
+    System.out.println("Creado el cliente: "+cliente);
+
+  }
   
   /*
    * Sobre la clase cliente creada, anadir un constructor
    * no canonico que acepte nombre, email dejando el saldo a 0.
    */
-  public static void ejercicio07(){
-    System.out.println("\nEjericio 7");
+  public static void ejercicio08(){
+    System.out.println("\nEjericio 8");
+
+    Cliente cliente = new Cliente("Robert Noyce","r.noyce@farichild.com", 100000);
+
+    System.out.println("Creado el cliente: "+cliente);
 
   }
 

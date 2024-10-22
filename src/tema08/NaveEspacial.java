@@ -11,11 +11,40 @@ public class NaveEspacial {
 	private int[] posicion = { 0, 0 };
 	private int velocidad;
 	private int masa;
+	protected int energia;
+	protected String numeroSerie;
 
+	
 	public NaveEspacial(String nombre) {
+		this(nombre, 0, 0, new int[2], 0, 0, 0);
+	}
+	
+	public NaveEspacial(String nombre, 
+			int potenciaEscudos, 
+			int potenciaMotores, 
+			int[] posicion, 
+			int velocidad,
+			int masa, 
+			int energia) {
+		super();
 		this.nombre = nombre;
+		this.potenciaEscudos = potenciaEscudos;
+		this.potenciaMotores = potenciaMotores;
+		this.posicion = posicion;
+		this.velocidad = velocidad;
+		this.masa = masa;
+		this.energia = energia;
+		this.numeroSerie = Integer.toString(NaveComercial.contadorNaves);
+		NaveComercial.contadorNaves++;
+		
 	}
 
+	static void reiniciarContador(){
+		contadorNaves = 0;
+	}
+	
+//	"Setters"
+	
 	
 	public void setVelocidad(int velocidad) {
 		this.velocidad = velocidad;
@@ -81,6 +110,42 @@ public class NaveEspacial {
 	public int getMasa() {
 		return masa;
 	}
+
+
+
+//	********************************************
+	
+	public int getEnergia() {
+		return this.energia;
+	}
+	
+	public void repostar(int cantidad) {
+		energia += cantidad;
+	}
+	
+	protected int consumirEnergia(int cantidad) {
+		energia = (cantidad>energia) ? 0 : energia - cantidad;
+		return energia;
+	}
+	
+	
+//	***********************************************
+	
+	public String getNumSerie() {
+		return numeroSerie;
+	}
+	
+//	public void setNombre(String nombre) {
+//		this.nombre = nombre;
+//	}
+
+
+
+//	public void setMasa(int masa) {
+//		this.masa = masa;
+//	}
+	
+
 
 
 }
