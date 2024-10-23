@@ -1,3 +1,4 @@
+
 //import java.beans.JavaBean;
 import repaso1.Estructurada;
 import repaso2.EstructuradaListas;
@@ -35,15 +36,12 @@ public class App {
         // EjercicioArrays.ejercicio03();
         // EjercicioArrays.ejercicio04();
         // EjercicioArrays.ejercicio05();
-        // EjercicioArrays.ejercicio06();
 
-        // // Tema 4
         // Operadores.ejercicio01();
         // Operadores.ejercicio02();
         // Operadores.ejercicio03();
         // Operadores.ejercicio04();
 
-        // // Tema 5
         // ControlDeFlujo.ejercicio01();
         // ControlDeFlujo.ejercicio02();
         // ControlDeFlujo.ejercicio03(24, 43, 1);
@@ -51,6 +49,8 @@ public class App {
         // ControlDeFlujo.ejercicio05();
         // ControlDeFlujo.ejercicio06();
         // ControlDeFlujo.ejercicio07();
+        // ControlDeFlujo.ejercicio08();
+
         // ControlDeFlujo.ejercicio09();
         // ControlDeFlujo.ejercicio10();
         // ControlDeFlujo.ejercicio11();
@@ -66,7 +66,7 @@ public class App {
         // ClasesyObjetos.ejercicio05();
         // ClasesyObjetos.ejercicio06();
         // ClasesyObjetos.ejercicio07();
-        // ClasesyObjetos.ejercicio08();
+
 
         // Herencia.ejercicio01();
         // Herencia.ejercicio02();
@@ -77,9 +77,12 @@ public class App {
         // Herencia.ejercicio07();
         // Herencia.ejercicio08();
 
+        // // Tema 10
         // Interfaces.ejercicio01();
         // Interfaces.ejercicio02();
         // Interfaces.ejercicio03();
+        // Interfaces.ejercicio04();
+
 
         // // Tema 11
         // ClasesAnidadas.ejercicio01();
@@ -95,6 +98,8 @@ public class App {
         // // Tema 13
         // Genericos.ejercicio01();
         // Genericos.ejercicio02();
+        // Genericos.ejercicio03();
+
 
         // // Tema 14 - Expresiones lambda
         // Lambdas.ejercicio01();
@@ -125,9 +130,14 @@ public class App {
         // JavaIO.ejercicio01();
         // JavaIO.ejercicio02();
         // JavaIO.ejercicio03();
+        // JavaIO.ejercicio04();
+        // JavaIO.ejercicio05();
 
+        // // Tema 17 - Anotaciones
         // Anotaciones.ejercicio01();
         // Anotaciones.ejercicio02();
+        // Anotaciones.ejercicio03();
+        // Anotaciones.ejercicio04();
 
         // Repaso Temas 1-5
         // Estructurada.ejercicio01();
