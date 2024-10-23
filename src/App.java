@@ -59,14 +59,14 @@ public class App {
         // ControlDeFlujo.ejercicio14();
 
         // // Tema 8
-        ClasesyObjetos.ejercicio01();
-        ClasesyObjetos.ejercicio02();
-        ClasesyObjetos.ejercicio03();
-        ClasesyObjetos.ejercicio04();
-        ClasesyObjetos.ejercicio05();
-        ClasesyObjetos.ejercicio06();
-        ClasesyObjetos.ejercicio07();
-        ClasesyObjetos.ejercicio08();
+        // ClasesyObjetos.ejercicio01();
+        // ClasesyObjetos.ejercicio02();
+        // ClasesyObjetos.ejercicio03();
+        // ClasesyObjetos.ejercicio04();
+        // ClasesyObjetos.ejercicio05();
+        // ClasesyObjetos.ejercicio06();
+        // ClasesyObjetos.ejercicio07();
+        // ClasesyObjetos.ejercicio08();
 
         // Herencia.ejercicio01();
         // Herencia.ejercicio02();

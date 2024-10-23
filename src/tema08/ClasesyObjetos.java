@@ -227,7 +227,7 @@ public class ClasesyObjetos {
   public static void ejercicio08(){
     System.out.println("\nEjericio 8");
 
-    Cliente cliente = new Cliente("Robert Noyce","r.noyce@farichild.com", 100000);
+    Cliente cliente = new Cliente("Robert Noyce","r.noyce@farichild.com");
 
     System.out.println("Creado el cliente: "+cliente);
 
