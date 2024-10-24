@@ -28,8 +28,8 @@ public class JavaIO {
 		System.out.println("\n\nTema 16: Java IO/API");
 		System.out.println("\nEjercicio 1");
 
-		final String URI1 = PATH+"/ejemplo1/";
-		final String URI2 = PATH+"/fichero1";
+		final String URI1 = PATH+"/ejemplo1";
+		final String URI2 = PATH+"/ejemplo1/fichero1";
 		Path p1 = Paths.get(URI1);
 		Path p2 = Paths.get(URI2);
 		Set<PosixFilePermission> perms1 = PosixFilePermissions.fromString("rwxrwxrwx");
@@ -154,7 +154,6 @@ public class JavaIO {
 		
 
 		try {
-			
 			mapAtributos = Files.readAttributes(fichero, ATRIBUTOS);
 			System.out.println(fichero);
 			System.out.println(mapAtributos);

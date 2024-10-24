@@ -16,6 +16,7 @@ import tema14.Lambdas;
 import tema15.Excepciones;
 import tema16.JavaIO;
 import tema17.Anotaciones;
+import tema18.Colecciones;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -138,6 +139,12 @@ public class App {
         // Anotaciones.ejercicio02();
         // Anotaciones.ejercicio03();
         // Anotaciones.ejercicio04();
+
+        // Tema 18 - Java I/O
+        Colecciones.ejercicio01();
+        Colecciones.ejercicio02();
+        Colecciones.ejercicio03();
+        Colecciones.ejercicio04();
 
         // Repaso Temas 1-5
         // Estructurada.ejercicio01();
