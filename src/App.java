@@ -79,10 +79,10 @@ public class App {
         // Herencia.ejercicio08();
 
         // // Tema 10
-        // Interfaces.ejercicio01();
-        // Interfaces.ejercicio02();
-        // Interfaces.ejercicio03();
-        // Interfaces.ejercicio04();
+        Interfaces.ejercicio01();
+        Interfaces.ejercicio02();
+        Interfaces.ejercicio03();
+        Interfaces.ejercicio04();
 
 
         // // Tema 11
@@ -141,10 +141,10 @@ public class App {
         // Anotaciones.ejercicio04();
 
         // Tema 18 - Java I/O
-        Colecciones.ejercicio01();
-        Colecciones.ejercicio02();
-        Colecciones.ejercicio03();
-        Colecciones.ejercicio04();
+        // Colecciones.ejercicio01();
+        // Colecciones.ejercicio02();
+        // Colecciones.ejercicio03();
+        // Colecciones.ejercicio04();
 
         // Repaso Temas 1-5
         // Estructurada.ejercicio01();
