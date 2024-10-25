@@ -2,29 +2,57 @@ package tema11;
 
 public class Solucion {
 
-  String texto = "texto class Solucion";
-  int valor = 100;
+	String texto = "texto class Solucion";
+	private int valor = 100;
 
-  void setTexto(String texto) {
-    this.texto = texto;
-  };
+	public Solucion(){}
 
-  void setValor(int valor) {
-    this.valor = valor;
-  };
+	public Solucion(String texto){
+		this.texto = texto;
+	}
 
-  // Soluciones a partir de aqui
+	void setTexto(String texto) {
+		this.texto = texto;
+	};
 
-  // La solucion del ejericio 5 va aqui dentro
-  void foo(){
-    int numero = 12;
+	void setValor(int valor) {
+		this.valor = valor;
+	};
 
-  //  SOlucion aqui
+	// Soluciones a partir de aqui
+	class Sol {
 
-    // ClaseLocal local = new ClaseLocal();
-    // local.probar();
+		String getTexto() {
+			return texto;
+		}
 
-  }
+		int getValor() {
+			return valor;
+		}
+
+		void setValor(int nuevoValor) {
+			valor = nuevoValor;
+		}
+
+	}
+
+	static class SolEstatica { }
+
+	// La solucion del ejericio 5 va aqui dentro
+	void foo() {
+		int numero = 12;
+
+		// SOlucion aqui
+		class ClaseLocal {
+			void probar() {
+				System.out.println(numero);
+			}
+		}
+
+		ClaseLocal local = new ClaseLocal();
+		local.probar();
+
+	}
 
 
 }
