@@ -97,8 +97,8 @@ public class App {
         // PaquetesYModulos.ejercicio01();
 
         // Tema 13
-        Genericos.ejercicio01();
-        Genericos.ejercicio02();
+        // Genericos.ejercicio01();
+        // Genericos.ejercicio02();
 
 
         // // Tema 14 - Expresiones lambda
@@ -120,11 +120,11 @@ public class App {
         // Lambdas.ejercicio16();
 
         // // Tema 15 - Excepciones
-        // Excepciones.ejercicio01();
-        // Excepciones.ejercicio02();
-        // Excepciones.ejericico03();
-        // Excepciones.ejercicio04();
-        // Excepciones.ejercicio05();
+        Excepciones.ejercicio01();
+        Excepciones.ejercicio02();
+        Excepciones.ejericico03();
+        Excepciones.ejercicio04();
+        Excepciones.ejercicio05();
 
         // // Tema 16 - Java IO
         // JavaIO.ejercicio01();
