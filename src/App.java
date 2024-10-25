@@ -102,22 +102,22 @@ public class App {
 
 
         // // Tema 14 - Expresiones lambda
-        Lambdas.ejercicio01();
-        Lambdas.ejercicio02();
-        Lambdas.ejercicio03();
-        Lambdas.ejercicio04();
-        Lambdas.ejercicio05();
-        Lambdas.ejercicio06();
-        Lambdas.ejercicio07();
-        Lambdas.ejercicio08();
-        Lambdas.ejercicio09();
-        Lambdas.ejercicio10();
-        Lambdas.ejercicio11();
-        Lambdas.ejercicio12();
-        Lambdas.ejercicio13();
-        Lambdas.ejercicio14();
-        Lambdas.ejercicio15();
-        Lambdas.ejercicio16();
+        // Lambdas.ejercicio01();
+        // Lambdas.ejercicio02();
+        // Lambdas.ejercicio03();
+        // Lambdas.ejercicio04();
+        // Lambdas.ejercicio05();
+        // Lambdas.ejercicio06();
+        // Lambdas.ejercicio07();
+        // Lambdas.ejercicio08();
+        // Lambdas.ejercicio09();
+        // Lambdas.ejercicio10();
+        // Lambdas.ejercicio11();
+        // Lambdas.ejercicio12();
+        // Lambdas.ejercicio13();
+        // Lambdas.ejercicio14();
+        // Lambdas.ejercicio15();
+        // Lambdas.ejercicio16();
 
         // // Tema 15 - Excepciones
         // Excepciones.ejercicio01();
@@ -155,7 +155,7 @@ public class App {
         // Repaso final
         // EstructuradaListas.ejercicio01();
         // EstructuradaListas.ejercicio02();
-        // EstructuradaListas.ejercicio03();
+        EstructuradaListas.ejercicio03();
 
     }
 }

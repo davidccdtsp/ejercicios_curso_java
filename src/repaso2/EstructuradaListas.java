@@ -5,12 +5,12 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-
 public class EstructuradaListas {
 
   /**
    * 
-   * Determinar la máxima distancia entre dos elementos idénticos dentro de una lista.
+   * Determinar la máxima distancia entre dos elementos idénticos dentro de una
+   * lista.
    * 
    * Ejemplo: [1, 1, 2, 2, 1] Solución: 4
    * 
@@ -18,8 +18,20 @@ public class EstructuradaListas {
    */
 
   public static int sol01(List<Integer> numberList) {
+
+    Map<Integer, Integer> posMap = new HashMap<>();
     int max = 0;
 
+    int index = 0;
+    for (var n : numberList) {
+      if (posMap.get(n) == null) {
+        posMap.put(n, index);
+      } else {
+        int dist = index - posMap.get(n);
+        max = (dist > max) ? dist : max;
+      }
+      index++;
+    }
     return max;
   }
 
@@ -27,7 +39,6 @@ public class EstructuradaListas {
     System.out.println();
     System.out.println("Ejercicio 01");
     System.out.println();
-
 
     // Caso de prueba 1
     List<Integer> test1 = List.of(1, 1, 2, 2, 1);
@@ -59,8 +70,10 @@ public class EstructuradaListas {
   }
 
   /**
-   * Dados dos entero K y una lista de enteros devolver una lista con los K primeros elementos en
-   * orden inverso. Si K es mayor que el tamaño de la lista se devolver el equivalente a hacer la
+   * Dados dos entero K y una lista de enteros devolver una lista con los K
+   * primeros elementos en
+   * orden inverso. Si K es mayor que el tamaño de la lista se devolver el
+   * equivalente a hacer la
    * llamada con K= tamano lista.
    * 
    * Ejemplos:
@@ -83,6 +96,19 @@ public class EstructuradaListas {
 
   public static List<Integer> sol02(int k, List<Integer> numberList) {
     List<Integer> result = new ArrayList<>();
+    int pivot = (k > numberList.size()) ? numberList.size() : k;
+
+    if (pivot <= 1) {
+      return numberList;
+    }
+
+    for (int i = pivot - 1; i >= 0; i--) {
+      result.add(numberList.get(i));
+    }
+
+    for (int i = pivot; i < numberList.size(); i++) {
+      result.add(numberList.get(i));
+    }
 
     return result;
   }
@@ -129,29 +155,62 @@ public class EstructuradaListas {
   }
 
   /**
-   * Dado un array conteniendo N eneteros y un entero positivo K, encontrar el tamaño del 
+   * Dado un array conteniendo N eneteros y un entero positivo K, encontrar el
+   * tamaño del
    * subarray de mayor longitud cuya suma sea divisible por K.
    * 
    * Ejemplos:
    * 
-   *        [2, 7, 6, 1, 4, 5]
+   * [2, 7, 6, 1, 4, 5]
    * 
    * Solución: 4 -> [7, 6, 1, 4]
    * 
-   *        [-2, 2, -5, 12, -11, -1, 7]
+   * [-2, 2, -5, 12, -11, -1, 7]
    * 
-  * Solución: 5 -> [-2, 2, -5, 12, -11, -1]
+   * Solución: 5 -> [-2, 2, -5, 12, -11, -1]
    * 
    */
 
-
-  public static int sol03(int k, List<Integer> numberList){
+  public static int sol03(int k, List<Integer> numberList) {
     int max = 0;
+
+    for (int i = 0; i < numberList.size(); i++) {
+      int sum = 0;
+      for (int j = i; j < numberList.size(); j++) {
+        sum = sum + numberList.get(j);
+        if (sum % k == 0) {
+          max = Math.max(max, j - i + 1);
+        }
+      }
+    }
+    return max;
+  }
+
+  public static int sol03Optimizada(int k, List<Integer> numberList) {
+    int max = 0;
+    int sum = 0;
+    Map<Integer, Integer> remainderMap = new HashMap<>();
+    remainderMap.put(0, -1); // Para sublistas desde el inicio que sean divisibles por k.
+
+    for (int i = 0; i < numberList.size(); i++) {
+      sum += numberList.get(i);
+
+      // Calcular residuo, ajustando para manejar valores negativos
+      int remainder = ((sum % k) + k) % k;
+
+      if (remainderMap.containsKey(remainder)) {
+        // Longitud de la sublista que es divisible por k
+        max = Math.max(max, i - remainderMap.get(remainder));
+      } else {
+        // Almacenar el primer índice donde ocurre este residuo
+        remainderMap.put(remainder, i);
+      }
+    }
 
     return max;
   }
 
-  public static void ejercicio03(){
+  public static void ejercicio03() {
 
     System.out.println("Ejercicio 03");
 
