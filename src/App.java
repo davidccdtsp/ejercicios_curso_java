@@ -134,10 +134,10 @@ public class App {
         // JavaIO.ejercicio05();
 
         // // Tema 17 - Anotaciones
-        // Anotaciones.ejercicio01();
-        // Anotaciones.ejercicio02();
-        // Anotaciones.ejercicio03();
-        // Anotaciones.ejercicio04();
+        Anotaciones.ejercicio01();
+        Anotaciones.ejercicio02();
+        Anotaciones.ejercicio03();
+        Anotaciones.ejercicio04();
 
         // Tema 18 - Java I/O
         // Colecciones.ejercicio01();
@@ -155,7 +155,7 @@ public class App {
         // Repaso final
         // EstructuradaListas.ejercicio01();
         // EstructuradaListas.ejercicio02();
-        EstructuradaListas.ejercicio03();
+        // EstructuradaListas.ejercicio03();
 
     }
 }
