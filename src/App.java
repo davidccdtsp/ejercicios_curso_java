@@ -102,29 +102,29 @@ public class App {
 
 
         // // Tema 14 - Expresiones lambda
-        // Lambdas.ejercicio01();
-        // Lambdas.ejercicio02();
-        // Lambdas.ejercicio03();
-        // Lambdas.ejercicio04();
-        // Lambdas.ejercicio05();
-        // Lambdas.ejercicio06();
-        // Lambdas.ejercicio07();
-        // Lambdas.ejercicio08();
-        // Lambdas.ejercicio09();
-        // Lambdas.ejercicio10();
-        // Lambdas.ejercicio11();
-        // Lambdas.ejercicio12();
-        // Lambdas.ejercicio13();
-        // Lambdas.ejercicio14();
-        // Lambdas.ejercicio15();
-        // Lambdas.ejercicio16();
+        Lambdas.ejercicio01();
+        Lambdas.ejercicio02();
+        Lambdas.ejercicio03();
+        Lambdas.ejercicio04();
+        Lambdas.ejercicio05();
+        Lambdas.ejercicio06();
+        Lambdas.ejercicio07();
+        Lambdas.ejercicio08();
+        Lambdas.ejercicio09();
+        Lambdas.ejercicio10();
+        Lambdas.ejercicio11();
+        Lambdas.ejercicio12();
+        Lambdas.ejercicio13();
+        Lambdas.ejercicio14();
+        Lambdas.ejercicio15();
+        Lambdas.ejercicio16();
 
         // // Tema 15 - Excepciones
-        Excepciones.ejercicio01();
-        Excepciones.ejercicio02();
-        Excepciones.ejericico03();
-        Excepciones.ejercicio04();
-        Excepciones.ejercicio05();
+        // Excepciones.ejercicio01();
+        // Excepciones.ejercicio02();
+        // Excepciones.ejericico03();
+        // Excepciones.ejercicio04();
+        // Excepciones.ejercicio05();
 
         // // Tema 16 - Java IO
         // JavaIO.ejercicio01();
